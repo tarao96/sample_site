@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    background: #efebdc;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* ヘッダー */
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    background: #4d4d4f;
+}
+header > nav > ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+header > nav > h1 {
+    color: #fff;
+}
+header > nav > ul > li {
+    border-bottom: 1px solid #fff;
+    padding: 6px 0;
+}
+header > nav > ul > li > a {
+    color: #fff;
+}
+header > .main-img {
+    position: relative;
+}
+header > .main-img > h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-family: cursive;
+    font-size: 7.0em;
+}
+header > .main-img > img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+/* メイン */
+/* お店案内 */
+main > .shop-guide-wrapper {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+main > .shop-guide-wrapper > .shop-guide-inner {
+    width: 60%;
+}
+main > .shop-guide-wrapper > .shop-guide-inner > h2 {
+    font-size: 2.0em;
+}
+main > .shop-guide-wrapper > .shop-guide-inner > .row {
+    display: flex;
+    gap: 30px;
+}
+main > .shop-guide-wrapper > .shop-guide-inner > .row > .guide-box {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-top: 50px;
+}
+main > .shop-guide-wrapper > .shop-guide-inner > .row > .right {
+    margin-top: 150px;
+}
+main > .shop-guide-wrapper > .shop-guide-inner > .row > .guide-box > a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #333333;
+    font-size: 1.5em;
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .5s;
+}
+main > .shop-guide-wrapper > .shop-guide-inner > .row > .guide-box > a:hover {
+    background-color: #333333;
+    color: #fff;
+}
+main > .shop-guide-wrapper > .shop-guide-inner > .row > .guide-box > img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* お店の魅力 */
+main > .shop-charm-wrapper > img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+main > .shop-charm-wrapper > .shop-charm-inner {
+    margin: 0 auto;
+    margin-top: 0;
+    width: 70%;
+}
+main > .shop-charm-wrapper > .shop-charm-inner > .row {
+    display: flex;
+    gap: 50px;
+}
+main > .shop-charm-wrapper > .shop-charm-inner > .row > img {
+    width: 600px;
+    height: 800px;
+}
+main > .shop-charm-wrapper > .shop-charm-inner > .row > .shop-charm-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main > .shop-charm-wrapper > .shop-charm-inner > .row > .shop-charm-text > h3 {
+    font-size: 2.0em;
+}
+main > .shop-charm-wrapper > .shop-charm-inner > .row > .shop-charm-text > p {
+    margin-top: 30px;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+}
+main > .shop-charm-wrapper > .shop-charm-inner > .row > .shop-charm-text > a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 25px;
+    width: 190px;
+}
+main > .shop-charm-wrapper > .shop-charm-inner > .row > .shop-charm-text > a:hover {
+    background-color: black;
+    color: #fff;
+    transition: .5s;
+}
+/* フッター */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    color: #fff;
+    padding: 30px 300px;
+}
+footer > .news {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer > .news > a {
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 25px;
+    width: 160px;
+    transition: .5s;
+}
+footer > .news > a:hover {
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+}
+footer > .recruit {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer > .recruit> ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer > .recruit > ul > li > a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+footer > .address {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
